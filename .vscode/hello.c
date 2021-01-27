@@ -1,25 +1,25 @@
-#include <stdio.h>
+	#include <stdio.h>
 
 
-int main(void)
-{
-int mul[3][9];
-
-for (int i = 0; i <3; i++)
-{
-	for (int j = 0; j < 9; j++)
+	int main(void)
 	{
-		mul[i][j] = (i + 2) * (j + 1);
-	}
-}
+	int mul[3][9];
 
-for (int i = 0; i < 3; i++)
-{
-	for (int j = 0; j < 9; j++)
+	for (int i = 0; i <3; i++)
 	{
-		printf("%d  ", mul[i][j]);
+		for (int j = 0; j < 9; j++)
+		{
+			mul[i][j] = (i + 2) * (j + 1);
+		}
 	}
-	printf("\n");
-}
-return 0;
-}
+
+	for (int i = 0; i < 3; i++)
+	{
+		for (int j = 0; j < 9; j++)
+		{
+			printf("%d  ", mul[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+	}
